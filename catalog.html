@@ -63,19 +63,63 @@
       </ul>
 
       <aside>
-        <ul>
-          <li>Bosch</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
+        <h2>Фильтр:</h2>
+        <div>
+          <h3>Цена:</h3>
+          <button type="button">Ползунок 1</button>
+          <button type="button">Ползунок 2</button>
+          <p><span>0</span> - <span>30000</span></p>
+        </div>
+
+        <div>
+          <h3>Производители:</h3>
+          <ul>
+            <li>Bosch</li>
+            <li>Интерскол</li>
+            <li>Makita</li>
+            <li>Dewalt</li>
+            <li>Hitachi</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Питание:</h3>
+          <ul>
+            <li>Аккумуляторные</li>
+            <li>Сетевые</li>
+          </ul>
+        </div>
+
         <button type="button">Показать</button>
       </aside>
+
+      <section>
+        <h2>Сортировка:</h2>
+        <div>
+          <p>
+            <label for="sort-price">По цене</label>
+            <input class="visually-hidden" type="radio" name="sort" id="sort-price" checked>
+          </p>
+          <p>
+            <label for="sort-type">По типу</label>
+            <input class="visually-hidden" type="radio" name="sort" id="sort-type">
+          </p>
+          <p>
+            <label for="sort-func">По функционалу</label>
+            <input class="visually-hidden" type="radio" name="sort" id="sort-func">
+          </p>
+        </div>
+        <div>
+          <p>
+            <label for="ascending-cost"><span class="visually-hidden">По возрастанию цены</span></label>
+            <input class="visually-hidden" type="radio" name="sort-cost" id="ascending-cost" checked>
+          </p>
+          <p>
+            <label for="descending-cost"><span class="visually-hidden">По убыванию цены</span></label>
+            <input class="visually-hidden" type="radio" name="sort-cost" id="descending-cost">
+          </p>
+        </div>
+      </section>
 
       <section>
         <ul>
@@ -155,6 +199,25 @@
           </li>
         </ul>
       </section>
+
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+
+      <div>
+        <b>Пара слов о перфораторах</b>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+          ударная дрель.
+        </p>
+      </div>
     </main>
 
     <footer>
