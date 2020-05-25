@@ -21,7 +21,7 @@
       </div>
 
       <div>
-        <button type="button">Корзина: <span>0</span></button>
+        <a href="#">Корзина: <span>0</span></a>
         <a href="#">Оформить заказ</a>
       </div>
 
@@ -78,6 +78,7 @@
         </div>
 
         <div>
+          <p class="visually-hidden">Слайдер</p>
           <ul>
             <li>
               <h3>Перфораторы</h3>
@@ -118,7 +119,7 @@
             <p>32500 Р.</p>
             <p>25500 Р.</p>
             <p>
-              <img src="img/product-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/product-3.jpg" width="184" height="164" alt="">
             </p>
           </li>
           <li>
@@ -126,7 +127,7 @@
             <p>22500 Р.</p>
             <p>15500 Р.</p>
             <p>
-              <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/product-2.jpg" width="127" height="112" alt="">
             </p>
           </li>
           <li>
@@ -134,14 +135,14 @@
             <p>30500 Р.</p>
             <p>25500 Р.</p>
             <p>
-              <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/product-1.jpg" width="144" height="128" alt="">
             </p>
           </li>
           <li>
             <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
             <p>12500 Р.</p>
             <p>
-              <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/product-2.jpg" width="127" height="112" alt="">
             </p>
           </li>
         </ul>
@@ -152,28 +153,28 @@
         <a href="#">Все производители</a>
         <ul>
           <li>
-            <a href="#"><img src="img/logo-bosch.jpg" width="126" height="37" alt="Логотип «Bosch»"></a>
+            <a href="#"><img src="img/logo-bosch.jpg" width="126" height="37" alt="Перейти на товары от «Bosch»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-makita.jpg" width="123" height="40" alt="Логотип «Makita»"></a>
+            <a href="#"><img src="img/logo-makita.jpg" width="123" height="40" alt="Перейти на товары от «Makita»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-dewalt.jpg" width="146" height="44" alt="Логотип «DeWalt»"></a>
+            <a href="#"><img src="img/logo-dewalt.jpg" width="146" height="44" alt="Перейти на товары от «DeWalt»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-interskol.jpg" width="200" height="88" alt="Логотип «Интерскол»"></a>
+            <a href="#"><img src="img/logo-interskol.jpg" width="200" height="88" alt="Перейти на товары от «Интерскол»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-hitachi.jpg" width="169" height="31" alt="Логотип «Hitachi»"></a>
+            <a href="#"><img src="img/logo-hitachi.jpg" width="169" height="31" alt="Перейти на товары от «Hitachi»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-lg.jpg" width="121" height="73" alt="Логотип «LG»"></a>
+            <a href="#"><img src="img/logo-lg.jpg" width="121" height="73" alt="Перейти на товары от «LG»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-aeg.jpg" width="151" height="96" alt="Логотип «AEG Power Solution»"></a>
+            <a href="#"><img src="img/logo-aeg.jpg" width="151" height="96" alt="Перейти на товары от «AEG Power Solution»"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-metabo.jpg" width="204" height="69" alt="Логотип «Metabo»"></a>
+            <a href="#"><img src="img/logo-metabo.jpg" width="204" height="69" alt="Перейти на товары от «Metabo»"></a>
           </li>
         </ul>
       </section>
@@ -287,13 +288,13 @@
 
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="#"><span class="visually-hidden">Перейти на страницу Вконтакте</span></a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a href="#"><span class="visually-hidden">Перейти на страницу Фейсбук</span></a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a href="#"><span class="visually-hidden">Перейти на страницу Инстаграм</span></a>
         </li>
       </ul>
 
@@ -302,5 +303,29 @@
         <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
+
+    <div>
+      <div>Тут будет карта</div>
+      <button type="button"><span class="visually-hidden">Закрыть карту</span></button>
+    </div>
+
+    <div>
+      <form action="#" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name-write-us" id="name-field" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="email-field">Ваше e-mail:</label>
+          <input type="email" name="email-write-us" id="email-field" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text-write-us" id="text-field" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button"><span class="visually-hidden">Закрыть окно с формой</span></button>
+    </div>
   </body>
 </html>
