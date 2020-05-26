@@ -12,8 +12,9 @@
       </a>
 
       <form action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-field">Поиск товара</label>
-        <input type="text" name="search" id="search-field" placeholder="Поиск:">
+        <label class="visually-hidden" for="search">Поиск товара</label>
+        <input type="text" name="search" id="search" placeholder="Поиск:">
+        <button type="submit" tabindex="-1"><span class="visually-hidden">Найти товар</span></button>
       </form>
 
       <div>
@@ -78,7 +79,6 @@
         </div>
 
         <div>
-          <p class="visually-hidden">Слайдер</p>
           <ul>
             <li>
               <h3>Перфораторы</h3>
@@ -235,7 +235,7 @@
               </p>
             </section>
             <section>
-              <h3>Кредит  </h3>
+              <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a href="#">Отправить заявку</a>
             </section>
@@ -328,16 +328,16 @@
     <div>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
-          <label for="email-field">Ваше e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+          <label for="email">Ваше e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" required>
         </p>
         <p>
-          <label for="text-field">Текст письма:</label>
-          <textarea name="text" id="text-field" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>

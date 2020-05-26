@@ -12,8 +12,9 @@
       </a>
 
       <form action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-field">Поиск товара</label>
-        <input type="text" name="search" id="search-field" placeholder="Поиск:">
+        <label class="visually-hidden" for="search">Поиск товара</label>
+        <input type="text" name="search" id="search" placeholder="Поиск:">
+        <button type="submit" tabindex="-1"><span class="visually-hidden">Найти товар</span></button>
       </form>
 
       <div>
@@ -71,34 +72,34 @@
             <button type="button" tabindex="-1"></button>
             <p>
               <label class="visually-hidden" for="start-range-field">Выбрать начало ценового диапазона</label>
-              <input type="text" name="start-range" id="start-range-field" value="0">
+              <input type="text" value="0" name="start-range" id="start-range-field">
             </p>
             <p>
               <label class="visually-hidden" for="end-range-field">Выбрать конец ценового диапазона</label>
-              <input type="text" name="end-range" id="end-range-field" value="30000">
+              <input type="text" value="30000" name="end-range" id="end-range-field">
             </p>
           </fieldset>
 
           <fieldset>
             <legend>Производители:</legend>
             <p>
-              <input class="visually-hidden" type="checkbox" name="manufacturer" id="filter-bosch" checked>
+              <input class="visually-hidden" type="checkbox" value="bosch" name="manufacturer" id="filter-bosch" checked>
               <label for="filter-bosch">Bosch</label>
             </p>
             <p>
-              <input class="visually-hidden" type="checkbox" name="manufacturer" id="filter-interskol">
+              <input class="visually-hidden" type="checkbox" value="interskol" name="manufacturer" id="filter-interskol">
               <label for="filter-interskol">Интерскол</label>
             </p>
             <p>
-              <input class="visually-hidden" type="checkbox" name="manufacturer" id="filter-makita" checked>
+              <input class="visually-hidden" type="checkbox" value="makita" name="manufacturer" id="filter-makita" checked>
               <label for="filter-makita">Makita</label>
             </p>
             <p>
-              <input class="visually-hidden" type="checkbox" name="manufacturer" id="filter-dewalt">
+              <input class="visually-hidden" type="checkbox" value="dewalt" name="manufacturer" id="filter-dewalt">
               <label for="filter-dewalt">Dewalt</label>
             </p>
             <p>
-              <input class="visually-hidden" type="checkbox" name="manufacturer" id="filter-hitachi">
+              <input class="visually-hidden" type="checkbox" value="hitachi" name="manufacturer" id="filter-hitachi">
               <label for="filter-hitachi">Hitachi</label>
             </p>
           </fieldset>
@@ -106,11 +107,11 @@
           <fieldset>
             <legend>Питание:</legend>
             <p>
-              <input class="visually-hidden" type="radio" value="battery-power" name="power" id="filter-battery" checked>
+              <input class="visually-hidden" type="radio" value="battery" name="power" id="filter-battery" checked>
               <label for="filter-battery">Аккумуляторные</label>
             </p>
             <p>
-              <input class="visually-hidden" type="radio" value="mains-power" name="power" id="filter-mains">
+              <input class="visually-hidden" type="radio" value="mains" name="power" id="filter-mains">
               <label for="filter-mains">Сетевые</label>
             </p>
           </fieldset>
@@ -240,12 +241,15 @@
         </ul>
       </section>
 
-      <ul>
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ul>
+      <section>
+        <h2 class="visually-hidden">Пагинация по товарам</h2>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая <span class="visually-hidden">страница</span></a></li>
+        </ul>
+      </section>
 
       <section>
         <h2>Пара слов о перфораторах</h2>
