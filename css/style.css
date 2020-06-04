@@ -55,6 +55,8 @@
 /* Global */
 
 :root {
+  /* Цвета */
+
   --base-strong: #000000;
   --base-week: #ffffff;
 
@@ -100,12 +102,12 @@
 
   /* Шрифты */
 
-  --cuprum: 'Cuprum', Arial, sans-serif;
-  --cuprum-italic: 'Cuprum Italic', Arial, sans-serif;
-  --cuprum-bold: 'Cuprum Bold', Arial, sans-serif;
-  --cuprum-bold-italic: 'Cuprum Bold Italic', Arial, sans-serif;
-  --ptsans: 'PT Sans', Arial, sans-serif;
-  --ptsans-bold: 'PT Sans Bold', Arial, sans-serif;
+  --base-f: 'Cuprum', Arial, sans-serif;
+  --base-italic-f: 'Cuprum Italic', Arial, sans-serif;
+  --base-bold-f: 'Cuprum Bold', Arial, sans-serif;
+  --base-bold-italic-f: 'Cuprum Bold Italic', Arial, sans-serif;
+  --secondary-f: 'PT Sans', Arial, sans-serif;
+  --secondary-bold-f: 'PT Sans Bold', Arial, sans-serif;
 }
 
 *,
@@ -131,7 +133,7 @@ img {
   color: var(--base-strong);
   font-size: 13px;
   line-height: 24px;
-  font-family: var(--ptsans);
+  font-family: var(--secondary-f);
 }
 
 .container {
@@ -157,7 +159,7 @@ img {
   text-transform: uppercase;
   background-color: var(--accent-strong);
   color: var(--base-week);
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-size: 14px;
   line-height: 18px;
   padding: 11px 10px 9px 10px;
@@ -176,7 +178,7 @@ img {
 
 .page-header {
   min-width: 960px;
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-size: 18px;
   background-color: var(--faint-weak);
 }
@@ -194,7 +196,7 @@ img {
   font-size: 16px;
   line-height: 23px;
   color: var(--accent-strong);
-  font-family: var(--cuprum-italic);
+  font-family: var(--base-italic-f);
   font-weight: 400;
   width: 200px;
 }
@@ -207,7 +209,7 @@ img {
   color: var(--accent-strong);
   font-size: 21px;
   line-height: 30px;
-  font-family: var(--cuprum-bold);
+  font-family: var(--base-bold-f);
   border: 3px solid var(--base-week);
 }
 
@@ -347,7 +349,7 @@ img {
 .about-us__title {
   font-size: 30px;
   line-height: 30px;
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -356,7 +358,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-size: 18px;
 }
 
@@ -366,7 +368,7 @@ img {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-weight: 400;
 }
 
@@ -374,7 +376,7 @@ img {
 
 .page-footer {
   background-color: var(--complement-week);
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
 }
 
 .page-footer__top {
@@ -475,7 +477,7 @@ img {
   line-height: 30px;
   background-color: var(--faint-weak);
   text-transform: uppercase;
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   font-weight: 400;
 }
 
@@ -520,7 +522,7 @@ img {
 .filter__title {
   font-size: 17px;
   line-height: 30px;
-  font-family: var(--ptsans-bold);
+  font-family: var(--secondary-bold-f);
 }
 
 .filters__button {
@@ -534,7 +536,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: var(--ptsans-bold);
+  font-family: var(--secondary-bold-f);
   line-height: 18px;
 }
 
@@ -545,6 +547,9 @@ img {
 .product__name {
   font-size: 18px;
   line-height: 20px;
+}
+
+.product__name-link {
   color: var(--base-strong);
 }
 
@@ -563,7 +568,7 @@ img {
 }
 
 .product__link {
-  font-family: var(--cuprum);
+  font-family: var(--base-f);
   text-transform: uppercase;
   font-size: 14px;
   border-radius: 2px;
