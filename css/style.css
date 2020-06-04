@@ -4,34 +4,34 @@
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/cuprum.woff2') format('woff2'),
-  url('/fonts/cuprum.woff') format('woff');
+  url('../fonts/cuprum.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: 'Cuprum Italic';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/cuprumitalic.woff2') format('woff2'),
-  url('/fonts/cuprumitalic.woff') format('woff');
+  url('../fonts/cuprumitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: 'Cuprum Bold';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/cuprumbold.woff2') format('woff2'),
-  url('/fonts/cuprumbold.woff') format('woff');
+  url('../fonts/cuprumbold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: 'Cuprum Bold Italic';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-  url('/fonts/cuprumbolditalic.woff') format('woff');
+  url('../fonts/cuprumbolditalic.woff') format('woff');
 }
 
 @font-face {
@@ -40,16 +40,16 @@
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/ptsans.woff2') format('woff2'),
-  url('/fonts/ptsans.woff') format('woff');
+  url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans Bold';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/ptsansbold.woff2') format('woff2'),
-  url('/fonts/ptsansbold.woff') format('woff');
+  url('../fonts/ptsansbold.woff') format('woff');
 }
 
 /* Global */
@@ -94,8 +94,18 @@
   --bg-faint-weak: #e5e5e5;
   --bg-complement-strong: #212a3a;
   --bg-warning-strong: #ffbf47;
+  --bg-success-weak: #518534;
 
   --text-base-weak: rgba(255, 255, 255, 0.5);
+
+  /* Шрифты */
+
+  --cuprum: 'Cuprum', Arial, sans-serif;
+  --cuprum-italic: 'Cuprum Italic', Arial, sans-serif;
+  --cuprum-bold: 'Cuprum Bold', Arial, sans-serif;
+  --cuprum-bold-italic: 'Cuprum Bold Italic', Arial, sans-serif;
+  --ptsans: 'PT Sans', Arial, sans-serif;
+  --ptsans-bold: 'PT Sans Bold', Arial, sans-serif;
 }
 
 *,
@@ -121,7 +131,7 @@ img {
   color: var(--base-strong);
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--ptsans);
 }
 
 .container {
@@ -147,10 +157,15 @@ img {
   text-transform: uppercase;
   background-color: var(--accent-strong);
   color: var(--base-week);
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
   font-size: 14px;
   line-height: 18px;
   padding: 11px 10px 9px 10px;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: var(--accent-strong);
 }
 
 .button-link:active {
@@ -161,7 +176,7 @@ img {
 
 .page-header {
   min-width: 960px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
   font-size: 18px;
   background-color: var(--faint-weak);
 }
@@ -178,8 +193,8 @@ img {
 .page-header__title {
   font-size: 16px;
   line-height: 23px;
-  font-style: italic;
   color: var(--accent-strong);
+  font-family: var(--cuprum-italic);
   font-weight: 400;
   width: 200px;
 }
@@ -192,13 +207,12 @@ img {
   color: var(--accent-strong);
   font-size: 21px;
   line-height: 30px;
-  font-weight: bold;
+  font-family: var(--cuprum-bold);
   border: 3px solid var(--base-week);
 }
 
 .page-header__address {
   font-size: 14px;
-  line-height: 24px;
   color: var(--complement-week);
 }
 
@@ -213,10 +227,10 @@ img {
 /* Search */
 
 .search__input {
-  font: inherit;
   background-color: transparent;
   border: none;
   color: var(--base-week);
+  line-height: 24px;
 }
 
 .search__input::placeholder {
@@ -333,7 +347,8 @@ img {
 .about-us__title {
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -341,9 +356,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
   font-size: 18px;
-  line-height: 24px;
 }
 
 /* Contacts */
@@ -352,19 +366,19 @@ img {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
+  font-weight: 400;
 }
 
 /* Page footer */
 
 .page-footer {
   background-color: var(--complement-week);
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
 }
 
 .page-footer__top {
   font-size: 18px;
-  line-height: 24px;
   color: var(--faint-weak);
 }
 
@@ -398,6 +412,7 @@ img {
 
 .page-footer__navigation-link:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .page-footer__navigation-link--accent {
@@ -406,7 +421,6 @@ img {
 
 .page-footer__navigation-link--accent:active {
   opacity: 0.5;
-  text-decoration: none;
 }
 
 .page-footer .wrapper {
@@ -460,9 +474,9 @@ img {
   font-size: 30px;
   line-height: 30px;
   background-color: var(--faint-weak);
-  font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--cuprum);
+  font-weight: 400;
 }
 
 /* Breadcrumbs */
@@ -479,12 +493,53 @@ img {
   color: var(--base-strong);
 }
 
+/* Filters */
+
+.filters {
+  text-transform: uppercase;
+}
+
+.filters__head {
+  line-height: 18px;
+  background-color: var(--warning-weak);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.filter__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--bg-faint-weak);
+}
+
+.filter__item:last-of-type {
+  border-bottom: none;
+}
+
+.filter__title {
+  font-size: 17px;
+  line-height: 30px;
+  font-family: var(--ptsans-bold);
+}
+
+.filters__button {
+  line-height: 18px;
+  border: 1px solid var(--bg-faint-weak);
+}
+
 /* Product */
 
 .products__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: var(--ptsans-bold);
+  line-height: 18px;
+}
+
+.product__item {
+  border: 1px solid var(--faint-weak-down);
 }
 
 .product__name {
@@ -496,14 +551,50 @@ img {
 .product__price {
   color: var(--base-week);
   font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
 
   background-color: var(--accent-strong); /* Временно */
 }
 
 .product__price--old {
   color: var(--faint-strong);
+  text-decoration: line-through;
 
   background-color: transparent; /* Временно */
+}
+
+.product__link {
+  font-family: var(--cuprum);
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.product__link--buy {
+  color: var(--base-week);
+  background-color: var(--success-weak);
+  box-shadow: inset 0 -3px 0 var(--success-strong);
+}
+
+.product__link--buy:hover,
+.product__link--buy:focus {
+  background-color: var(--success-weak-down);
+}
+
+.product__link--buy:active {
+  background-color: var(--bg-success-weak);
+}
+
+.product__link--bookmark {
+  border: 3px solid var(--success-weak);
+  color: var(--complement-week);
+  text-align: center;
+}
+
+.product__link--bookmark:hover,
+.product__link--bookmark:focus {
+  border: 3px solid var(--complement-week);
+}
+
+.product__link--bookmark:active {
+  opacity: 0.5;
 }
