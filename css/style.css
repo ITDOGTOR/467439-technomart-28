@@ -78,6 +78,11 @@
   --special-lilac: #dc91d8;
   --special-green: #8ed78f;
 
+  --range-bar: #d7dcde;
+  --range-current-bar: #00ca74;
+  --range-toggle: #ababab;
+  --range-shadow-toggle: rgba(171, 171, 171, 0.3);
+
   /* Сдвиги */
 
   --faint-strong-down: #c5c5c5;
@@ -93,9 +98,15 @@
   /* Подмены */
 
   --bg-base-strong: rgba(0, 0, 0, 0.25);
-  --bg-faint-weak: #e5e5e5;
+
+  --bg-faint-weak: #f4f4f4;
+  --bg-faint-weak-down: #e5e5e5;
+
+  --bg-complement-strong-up: #161d29;
   --bg-complement-strong: #212a3a;
+
   --bg-warning-strong: #ffbf47;
+
   --bg-success-weak: #518534;
 
   --text-base-weak: rgba(255, 255, 255, 0.5);
@@ -108,6 +119,14 @@
   --base-bold-italic-f: 'Cuprum Bold Italic', Arial, sans-serif;
   --secondary-f: 'PT Sans', Arial, sans-serif;
   --secondary-bold-f: 'PT Sans Bold', Arial, sans-serif;
+
+  /* Размер шрифта */
+
+  --title-base-fz: 30px;
+
+  /* Межстрочный интервал */
+
+  --title-base-lh: 30px;
 }
 
 *,
@@ -257,7 +276,7 @@ img {
 }
 
 .product-navigation__link:active {
-  background-color: var(--complement-strong-up);
+  background-color: var(--bg-complement-strong-up);
   color: var(--text-base-weak);
 }
 
@@ -347,8 +366,8 @@ img {
 /* About us */
 
 .about-us__title {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: var(--title-base-fz);
+  line-height: var(--title-base-lh);
   font-family: var(--base-f);
   font-weight: 400;
   text-transform: uppercase;
@@ -366,8 +385,8 @@ img {
 
 .contacts__title {
   text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: var(--title-base-fz);
+  line-height: var(--title-base-lh);
   font-family: var(--base-f);
   font-weight: 400;
 }
@@ -473,8 +492,8 @@ img {
 /* Page main */
 
 .page-main__title {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: var(--title-base-fz);
+  line-height: var(--title-base-lh);
   background-color: var(--faint-weak);
   text-transform: uppercase;
   font-family: var(--base-f);
@@ -512,7 +531,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: 1px solid var(--bg-faint-weak);
+  border-bottom: 1px solid var(--bg-faint-weak-down);
 }
 
 .filter__item:last-of-type {
@@ -521,13 +540,13 @@ img {
 
 .filter__title {
   font-size: 17px;
-  line-height: 30px;
+  line-height: var(--title-base-lh);
   font-family: var(--secondary-bold-f);
 }
 
 .filters__button {
   line-height: 18px;
-  border: 1px solid var(--bg-faint-weak);
+  border: 1px solid var(--bg-faint-weak-down);
 }
 
 /* Product */
