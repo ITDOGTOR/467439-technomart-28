@@ -723,13 +723,14 @@ img {
 }
 
 .sorting__link {
-  border-bottom: 1px dashed var(--accent-strong);
+  border-bottom: 1px solid var(--accent-strong);
   color: var(--text-base-strong);
+  border-image: url('../img/border-square.svg') 0 1 1 0 repeat repeat;
 }
 
 .sorting__link:hover,
 .sorting__link:focus {
-  border-bottom-style: solid;
+  border-image: none;
   color: var(--base-strong);
 }
 
@@ -740,6 +741,7 @@ img {
 
 .sorting__link--current {
   color: var(--accent-strong);
+  border-bottom: none;
 }
 
 .sorting__link--current:hover,
@@ -747,7 +749,7 @@ img {
 .sorting__link--current:active {
   color: var(--accent-strong);
   cursor: default;
-  border-bottom: 1px dashed var(--accent-strong);
+  border-bottom: none;
 }
 
 /* Pagination */
