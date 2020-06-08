@@ -735,13 +735,14 @@ img {
 }
 
 .sorting__link:active {
-  border-bottom: none;
+  border-bottom-color: transparent;
   color: var(--accent-strong);
 }
 
 .sorting__link--current {
   color: var(--accent-strong);
   border-bottom: none;
+  border-image: none;
 }
 
 .sorting__link--current:hover,
@@ -749,7 +750,40 @@ img {
 .sorting__link--current:active {
   color: var(--accent-strong);
   cursor: default;
-  border-bottom: none;
+}
+
+/* Далее временный костыль */
+
+.sorting__link--up {
+  border-image: none;
+  border-style: solid;
+  border-width: 0 6px 10px 6px;
+  border-color: transparent transparent var(--faint-strong-down) transparent;
+}
+
+.sorting__link--up:hover,
+.sorting__link--up:focus {
+  border-color: transparent transparent var(--base-strong) transparent;
+}
+
+.sorting__link--up:active {
+  border-color: transparent transparent var(--accent-strong) transparent;
+}
+
+.sorting__link--down {
+  border-image: none;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: var(--faint-strong-down) transparent transparent transparent;
+}
+
+.sorting__link--down:hover,
+.sorting__link--down:focus {
+  border-color: var(--base-strong) transparent transparent transparent;
+}
+
+.sorting__link--down:active {
+  border-color: var(--accent-strong) transparent transparent transparent;
 }
 
 /* Pagination */
