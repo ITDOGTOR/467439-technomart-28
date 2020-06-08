@@ -752,38 +752,29 @@ img {
   cursor: default;
 }
 
-/* Далее временный костыль */
-
-.sorting__link--up {
-  border-image: none;
-  border-style: solid;
-  border-width: 0 6px 10px 6px;
-  border-color: transparent transparent var(--faint-strong-down) transparent;
+.sorting__link--direction {
+  border-bottom: none;
 }
 
-.sorting__link--up:hover,
-.sorting__link--up:focus {
-  border-color: transparent transparent var(--base-strong) transparent;
+.sorting__image {
+  fill: var(--faint-strong-down);
 }
 
-.sorting__link--up:active {
-  border-color: transparent transparent var(--accent-strong) transparent;
+.sorting__image:hover,
+.sorting__image:focus {
+  fill: var(--base-strong);
 }
 
-.sorting__link--down {
-  border-image: none;
-  border-style: solid;
-  border-width: 10px 6px 0 6px;
-  border-color: var(--faint-strong-down) transparent transparent transparent;
+.sorting__image:active {
+  fill: var(--accent-strong);
 }
 
-.sorting__link--down:hover,
-.sorting__link--down:focus {
-  border-color: var(--base-strong) transparent transparent transparent;
+.sorting__image--rotate {
+  transform: rotate(180deg);
 }
 
-.sorting__link--down:active {
-  border-color: var(--accent-strong) transparent transparent transparent;
+.sorting__link--current .sorting__image {
+  fill: var(--accent-strong);
 }
 
 /* Pagination */
