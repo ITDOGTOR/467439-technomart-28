@@ -169,6 +169,7 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+  box-sizing: content-box;
 }
 
 .visually-hidden {
@@ -1076,7 +1077,6 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .social__item {
