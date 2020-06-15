@@ -895,12 +895,19 @@ img {
 }
 
 .about-us__item {
+  position: relative;
   margin-bottom: 10px;
   padding-left: 35px;
 }
 
-.about-us__item:last-child {
-  margin-bottom: 0;
+.about-us__item::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--accent-strong);
 }
 
 .about-us__link {
