@@ -490,11 +490,13 @@
       </div>
     </footer>
 
-    <div>
-      <p>Товар добавлен в корзину!</p>
-      <a href="#">Оформить заказ</a>
-      <button type="button">Продолжить покупки</button>
-      <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
-    </div>
+    <section class="modal modal--links modal-cart">
+      <p class="modal-cart__text">Товар добавлен в корзину!</p>
+      <div class="modal-cart__inner">
+        <a class="modal-cart__link button-link" href="#">Оформить заказ</a>
+        <a class="modal-cart__link modal-cart__link--white button-link" href="#">Продолжить покупки</a>
+      </div>
+      <button class="modal__close-button button" type="button" aria-label="Закрыть окно с оповещением"></button>
+    </section>
   </body>
 </html>
