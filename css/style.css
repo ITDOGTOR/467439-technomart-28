@@ -1230,7 +1230,7 @@ img {
   margin: 0 0 10px;
   background-color: var(--base-weak);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
