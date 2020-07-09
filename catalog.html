@@ -150,16 +150,23 @@
             <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter__item">
                 <legend class="filter__title">Цена:</legend>
-                <button type="button" tabindex="-1"></button>
-                <button type="button" tabindex="-1"></button>
-                <p>
-                  <label class="visually-hidden" for="start-range-field">Выбрать начало ценового диапазона</label>
-                  <input type="text" value="0" name="start-range" id="start-range-field">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="end-range-field">Выбрать конец ценового диапазона</label>
-                  <input type="text" value="30000" name="end-range" id="end-range-field">
-                </p>
+                <div class="filter__range range-filter">
+                  <div class="range__bar">
+                    <div class="range__filled-bar" style="width: 84.5%;"></div>
+                    <button class="range__control range__control--left button" style="left: 0" type="button" tabindex="-1"></button>
+                    <button class="range__control range__control--right button" style="right: 13.4%;" type="button" tabindex="-1"></button>
+                  </div>
+                </div>
+                <div class="range__ally">
+                  <p class="range__input-wrapper">
+                    <label class="visually-hidden" for="start-range-field">Выбрать начало ценового диапазона</label>
+                    <input class="range__ally-input" type="number" value="0" name="start-range" min="0" max="50000" step="100" id="start-range-field">
+                  </p>
+                  <p class="range__input-wrapper">
+                    <label class="visually-hidden" for="end-range-field">Выбрать конец ценового диапазона</label>
+                    <input class="range__ally-input" type="number" value="30000" name="end-range" min="0" max="50000" step="100" id="end-range-field">
+                  </p>
+                </div>
               </fieldset>
 
               <fieldset class="filter__item">

@@ -127,40 +127,32 @@
           <a class="offer__link button-link" href="#">Бесплатно</a>
         </div>
 
-        <div class="offer__slider slider">
+        <div class="offer__slider slider-offer slider">
           <ul class="slider__list">
-            <li class="slider__item slide">
-              <div class="slide__inner">
-                <h3 class="slide__name">Перфораторы</h3>
-                <p class="slide__text">Настоящие мужские игрушки</p>
+            <li class="slide">
+              <div class="slide-offer__inner">
+                <h3 class="slide-offer__name">Дрели</h3>
+                <p class="slide-offer__text">Соседям на радость!</p>
               </div>
-              <a class="slide__link button-link" href="catalog.html">Открыть каталог</a>
-              <img class="slide__image" src="img/slide-1.jpg" width="620" height="266" alt="Мужчина-строитель сверлит стену дрелью от производителя BOSCH">
+              <a class="slide-offer__link button-link" href="catalog.html">Открыть каталог</a>
+              <img class="slide-offer__image" src="img/slide-2.jpg" width="620" height="266" alt="Мужчина-строитель сверлит стену перфоратором от производителя BOSCH">
             </li>
-            <li class="slider__item slide">
-              <div class="slide__inner">
-                <h3 class="slide__name">Дрели</h3>
-                <p class="slide__text">Соседям на радость!</p>
+            <li class="slide slide--current">
+              <div class="slide-offer__inner">
+                <h3 class="slide-offer__name">Перфораторы</h3>
+                <p class="slide-offer__text">Настоящие мужские игрушки</p>
               </div>
-              <a class="slide__link button-link" href="catalog.html">Открыть каталог</a>
-              <img class="slide__image" src="img/slide-2.jpg" width="620" height="266" alt="Мужчина-строитель сверлит стену перфоратором от производителя BOSCH">
+              <a class="slide-offer__link button-link" href="catalog.html">Открыть каталог</a>
+              <img class="slide-offer__image" src="img/slide-1.jpg" width="620" height="266" alt="Мужчина-строитель сверлит стену дрелью от производителя BOSCH">
             </li>
           </ul>
 
-          <button class="slider__button slider__button--prev button" type="button">
-            <span class="visually-hidden">Переход на предыдущий слайд</span>
-          </button>
-          <button class="slider__button slider__button--next button" type="button">
-            <span class="visually-hidden">Переход на следующий слайд</span>
-          </button>
+          <button class="slider-offer__button slider-offer__button--prev button" type="button" aria-label="Переход на предыдущий слайд"></button>
+          <button class="slider-offer__button slider-offer__button--next button" type="button" aria-label="Переход на следующий слайд"></button>
 
-          <div class="slider__controls">
-            <button class="slider__control button" type="button">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
-            <button class="slider__control slider__control--current button" type="button">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
+          <div class="slider-offer__controls">
+            <button class="slider-offer__control button" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-offer__control slider-offer__control--current button" type="button" aria-label="Второй слайд"></button>
           </div>
         </div>
       </section>
@@ -287,47 +279,47 @@
             Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
-          <div class="services__inner">
-            <div class="services__controls">
-              <p class="service__control-wrap">
-                <input class="service__control visually-hidden" type="radio" name="service" id="service-delivery" checked>
-                <label class="service__label" for="service-delivery">Доставка</label>
-              </p>
-              <p class="service__control-wrap">
-                <input class="service__control visually-hidden" type="radio" name="service" id="service-guarantee">
-                <label class="service__label" for="service-guarantee">Гарантия</label>
-              </p>
-              <p class="service__control-wrap">
-                <input class="service__control visually-hidden" type="radio" name="service" id="service-credit">
-                <label class="service__label" for="service-credit">Кредит</label>
-              </p>
+          <div class="services__inner slider-services slider">
+            <div class="slider-services__controls">
+              <button class="slider-services__control slider-services__control--current button" type="button" aria-label="Первый слайд">
+                Доставка
+              </button>
+              <button class="slider-services__control button" type="button" aria-label="Второй слайд">
+                Гарантия
+              </button>
+              <button class="slider-services__control button" type="button" aria-label="Третий слайд">
+                Кредит
+              </button>
             </div>
-            <div class="services__list">
-              <section class="service__item">
-                <h3 class="service__name">Доставка</h3>
-                <p class="service__text">
+            <ul class="slider-services__list slider__list">
+              <li class="slide-service slide-service--delivery slide slide--current">
+                <h3 class="slide-service__name">Доставка</h3>
+                <p class="slide-service__text">
                   Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
-              </section>
-              <section class="service__item">
-                <h3 class="service__name">Гарантия</h3>
-                <p class="service__text">
-                  Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-                  возгоранием, вы всегда можете быть уверены в нашей гарантии.
-                  Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+              </li>
+              <li class="slide-service slide-service--guarantees slide">
+                <h3 class="slide-service__name">Гарантия</h3>
+                <p class="slide-service__text">
+                  Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его
+                  возгоранием, вы всегда можете быть уверены в нашей
+                  гарантии. Мы обменяем сгоревший товар на новый.
+                  Дом уж восстановите как-нибудь сами.
                 </p>
-              </section>
-              <section class="service__item">
-                <h3 class="service__name">Кредит</h3>
-                <p class="service__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
-                  помощь.
+              </li>
+              <li class="slide-service slide-service--credit slide">
+                <h3 class="slide-service__name">Кредит</h3>
+                <p class="slide-service__text">
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
                 </p>
-                <a class="service__link button-link" href="#">Отправить заявку</a>
-              </section>
-            </div>
+                <a class="slide-service__link button-link" href="#">Отправить заявку</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
