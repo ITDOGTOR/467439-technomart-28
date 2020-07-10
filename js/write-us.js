@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 (function () {
   const writeUsModalOpen = document.querySelector('.contacts__form-link');
@@ -29,4 +29,4 @@
       }
     }
   });
-})();
+})();*/
