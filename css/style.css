@@ -545,6 +545,9 @@ img {
 }
 
 .user-navigation__link--account {
+  width: 252px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   padding-right: 10px;
   padding-left: 55px;
 
@@ -560,6 +563,8 @@ img {
 .user-navigation__item--logout {
   display: flex;
   padding: 14px 15px 14px 12px;
+  height: 100%;
+  align-items: center;
 }
 
 .user-navigation__link--nav {
@@ -1050,6 +1055,16 @@ img {
   line-height: 18px;
 
   border: 1px solid var(--bg-faint-weak-down);
+  outline: none;
+}
+
+.filters__button:hover,
+.filters__button:focus {
+  border-color: var(--faint-strong-down);
+}
+
+.filters__button:active {
+  border-color: var(--accent-strong);
 }
 
 /* Range filter */
