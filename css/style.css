@@ -1860,6 +1860,7 @@ img {
 /* Modal */
 
 .modal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1879,6 +1880,15 @@ img {
   height: 7px;
 
   background-color: var(--accent-strong);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal__links {
@@ -1905,7 +1915,6 @@ img {
 /* Modal map */
 
 .modal-map {
-  display: none;
   width: 940px;
   min-height: 450px;
 
@@ -1920,7 +1929,6 @@ img {
 /* Modal write us */
 
 .modal-write-us {
-  display: none;
   width: 620px;
 }
 
@@ -1984,7 +1992,6 @@ img {
 /* Modal cart */
 
 .modal-cart {
-  display: none;
   width: 620px;
 }
 
@@ -2230,4 +2237,46 @@ img {
 .slide-service__link {
   min-width: 195px;
   margin-top: 25px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    transform: translate(-50%, -45%);
+  }
+
+  90% {
+    transform: translate(-50%, -55%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-55%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-45%, -50%);
+  }
 }
